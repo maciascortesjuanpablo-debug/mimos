@@ -4,7 +4,7 @@ import { conectaDB,supabase } from './config/supabase.js';
 import AuthRoutes from './Routes/auth.js';
 import UserRoutes from './Routes/user.js';
 import HeladosRoutes from './Routes/helados.js';
-
+import PedidosRoutes from './Routes/pedidos.js';
 //Importamos las rutas de usuario
 
 
@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
 app.use('/auth', AuthRoutes);
 app.use('/usuarios', UserRoutes);
 app.use('/api', HeladosRoutes);
-
+app.use('/api', PedidosRoutes);
 
 //Configuramos el puerto
 

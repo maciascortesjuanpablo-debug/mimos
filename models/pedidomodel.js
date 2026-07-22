@@ -1,4 +1,4 @@
-import supabase from '../config/supabase.js';
+import {supabase} from '../config/supabase.js';
 
 export const CrearPedido = async (pedidoData) => {
     const { data, error } = await supabase
